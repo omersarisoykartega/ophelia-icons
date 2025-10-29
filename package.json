@@ -1,0 +1,56 @@
+{
+  "name": "@ksocial/icons",
+  "version": "1.0.0",
+  "description": "Modern React icon library with rich props and variants",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "build:icons": "node build-icons.js",
+    "dev": "rollup -c -w",
+    "prepublishOnly": "npm run build:icons && npm run build",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "react",
+    "icons",
+    "svg",
+    "typescript",
+    "ui",
+    "components"
+  ],
+  "author": "KSocial Team",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^4.6.1",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "typescript": "^5.3.3",
+    "webfont": "^11.2.26"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ksocial/icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ksocial/icons/issues"
+  },
+  "homepage": "https://github.com/ksocial/icons#readme"
+}
