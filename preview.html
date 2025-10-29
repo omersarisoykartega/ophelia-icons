@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ophelia Icons Preview</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .animate-spin {
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        const { useState } = React;
+        
+        // Icon Components
+        const Spinner = ({ 
+            size = 24, 
+            color = "#262626", 
+            variant = "filled",
+            strokeWidth = 1.5,
+            spin = false,
+            className = ""
+        }) => {
+            const isOutlined = variant === 'outlined';
+            const isLinear = variant === 'linear';
+            const fillValue = isOutlined || isLinear ? 'none' : 'currentColor';
+            const strokeValue = isOutlined || isLinear ? 'currentColor' : 'none';
+            
+            return React.createElement('svg', {
+                width: size,
+                height: size,
+                viewBox: "0 0 24 24",
+                fill: fillValue,
+                stroke: strokeValue,
+                strokeWidth: strokeWidth,
+                xmlns: "http://www.w3.org/2000/svg",
+                className: `${spin ? 'animate-spin' : ''} ${className}`,
+                style: { color }
+            }, [
+                React.createElement('circle', {
+                    key: 'circle',
+                    className: "opacity-25",
+                    cx: "12",
+                    cy: "12",
+                    r: "10",
+                    strokeWidth: "4",
+                    stroke: "currentColor"
+                }),
+                React.createElement('path', {
+                    key: 'path',
+                    className: "opacity-75",
+                    fill: "currentColor",
+                    d: "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                })
+            ]);
+        };
+        
+        const ArrowRight = ({ 
+            size = 24, 
+            color = "#262626", 
+            variant = "filled",
+            strokeWidth = 1.5,
+            className = ""
+        }) => {
+            const isOutlined = variant === 'outlined';
+            const isLinear = variant === 'linear';
+            const fillValue = isOutlined || isLinear ? 'none' : 'currentColor';
+            const strokeValue = isOutlined || isLinear ? 'currentColor' : 'none';
+            
+            return React.createElement('svg', {
+                width: size,
+                height: size,
+                viewBox: "0 0 24 24",
+                fill: fillValue,
+                stroke: strokeValue,
+                strokeWidth: strokeWidth,
+                xmlns: "http://www.w3.org/2000/svg",
+                className: className,
+                style: { color }
+            }, [
+                React.createElement('path', {
+                    key: 'path',
+                    d: "M5 12h14m-7-7l7 7-7 7",
+                    stroke: "currentColor",
+                    strokeWidth: "2",
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round"
+                })
+            ]);
+        };
+        
+        const Heart = ({ 
+            size = 24, 
+            color = "#262626", 
+            variant = "filled",
+            strokeWidth = 1.5,
+            className = ""
+        }) => {
+            const isOutlined = variant === 'outlined';
+            const isLinear = variant === 'linear';
+            const fillValue = isOutlined || isLinear ? 'none' : 'currentColor';
+            const strokeValue = isOutlined || isLinear ? 'currentColor' : 'none';
+            
+            return React.createElement('svg', {
+                width: size,
+                height: size,
+                viewBox: "0 0 24 24",
+                fill: fillValue,
+                stroke: strokeValue,
+                strokeWidth: strokeWidth,
+                xmlns: "http://www.w3.org/2000/svg",
+                className: className,
+                style: { color }
+            }, [
+                React.createElement('path', {
+                    key: 'path',
+                    d: "M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z",
+                    stroke: "currentColor",
+                    strokeWidth: "2",
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round"
+                })
+            ]);
+        };
+        
+        const Check = ({ 
+            size = 24, 
+            color = "#262626", 
+            variant = "filled",
+            strokeWidth = 1.5,
+            className = ""
+        }) => {
+            const isOutlined = variant === 'outlined';
+            const isLinear = variant === 'linear';
+            const fillValue = isOutlined || isLinear ? 'none' : 'currentColor';
+            const strokeValue = isOutlined || isLinear ? 'currentColor' : 'none';
+            
+            return React.createElement('svg', {
+                width: size,
+                height: size,
+                viewBox: "0 0 24 24",
+                fill: fillValue,
+                stroke: strokeValue,
+                strokeWidth: strokeWidth,
+                xmlns: "http://www.w3.org/2000/svg",
+                className: className,
+                style: { color }
+            }, [
+                React.createElement('path', {
+                    key: 'path',
+                    d: "M20 6L9 17l-5-5",
+                    stroke: "currentColor",
+                    strokeWidth: "2",
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round"
+                })
+            ]);
+        };
+        
+        // Preview Component
+        const IconsPreview = () => {
+            const [size, setSize] = useState(32);
+            const [color, setColor] = useState("#262626");
+            const [variant, setVariant] = useState("filled");
+            const [spin, setSpin] = useState(false);
+            
+            return React.createElement('div', { className: "p-8" }, [
+                React.createElement('h1', { 
+                    key: 'title',
+                    className: "text-3xl font-bold mb-8" 
+                }, "Ophelia Icons Preview"),
+                
+                React.createElement('div', { 
+                    key: 'controls',
+                    className: "mb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" 
+                }, [
+                    React.createElement('div', { key: 'size' }, [
+                        React.createElement('label', { 
+                            key: 'size-label',
+                            className: "block text-sm font-medium mb-2" 
+                        }, `Size: ${size}px`),
+                        React.createElement('input', {
+                            key: 'size-input',
+                            type: "range",
+                            min: "16",
+                            max: "128",
+                            value: size,
+                            onChange: (e) => setSize(Number(e.target.value)),
+                            className: "w-full"
+                        })
+                    ]),
+                    
+                    React.createElement('div', { key: 'color' }, [
+                        React.createElement('label', { 
+                            key: 'color-label',
+                            className: "block text-sm font-medium mb-2" 
+                        }, "Color"),
+                        React.createElement('input', {
+                            key: 'color-input',
+                            type: "color",
+                            value: color,
+                            onChange: (e) => setColor(e.target.value),
+                            className: "w-20 h-10 border rounded"
+                        })
+                    ]),
+                    
+                    React.createElement('div', { key: 'variant' }, [
+                        React.createElement('label', { 
+                            key: 'variant-label',
+                            className: "block text-sm font-medium mb-2" 
+                        }, "Variant"),
+                        React.createElement('select', {
+                            key: 'variant-select',
+                            value: variant,
+                            onChange: (e) => setVariant(e.target.value),
+                            className: "w-full p-2 border rounded"
+                        }, [
+                            React.createElement('option', { key: 'filled', value: 'filled' }, 'Filled'),
+                            React.createElement('option', { key: 'outlined', value: 'outlined' }, 'Outlined'),
+                            React.createElement('option', { key: 'linear', value: 'linear' }, 'Linear')
+                        ])
+                    ]),
+                    
+                    React.createElement('div', { key: 'spin' }, [
+                        React.createElement('label', { 
+                            key: 'spin-label',
+                            className: "flex items-center space-x-2" 
+                        }, [
+                            React.createElement('input', {
+                                key: 'spin-checkbox',
+                                type: "checkbox",
+                                checked: spin,
+                                onChange: (e) => setSpin(e.target.checked),
+                                className: "rounded"
+                            }),
+                            React.createElement('span', { key: 'spin-text' }, "Spin Animation")
+                        ])
+                    ])
+                ]),
+                
+                React.createElement('div', { 
+                    key: 'preview',
+                    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" 
+                }, [
+                    React.createElement('div', { 
+                        key: 'spinner-filled',
+                        className: "text-center p-6 border rounded-lg" 
+                    }, [
+                        React.createElement('h3', { 
+                            key: 'title-filled',
+                            className: "text-lg font-semibold mb-4" 
+                        }, "Spinner (Filled)"),
+                        React.createElement('div', { 
+                            key: 'container-filled',
+                            className: "flex justify-center items-center h-32 bg-gray-100 rounded" 
+                        }, React.createElement(Spinner, {
+                            size: size,
+                            color: color,
+                            variant: variant,
+                            spin: spin
+                        }))
+                    ]),
+                    
+                    React.createElement('div', { 
+                        key: 'spinner-outlined',
+                        className: "text-center p-6 border rounded-lg" 
+                    }, [
+                        React.createElement('h3', { 
+                            key: 'title-outlined',
+                            className: "text-lg font-semibold mb-4" 
+                        }, "Spinner (Outlined)"),
+                        React.createElement('div', { 
+                            key: 'container-outlined',
+                            className: "flex justify-center items-center h-32 bg-gray-100 rounded" 
+                        }, React.createElement(Spinner, {
+                            size: size,
+                            color: color,
+                            variant: "outlined",
+                            strokeWidth: 2,
+                            spin: spin
+                        }))
+                    ]),
+                    
+                    React.createElement('div', { 
+                        key: 'spinner-linear',
+                        className: "text-center p-6 border rounded-lg" 
+                    }, [
+                        React.createElement('h3', { 
+                            key: 'title-linear',
+                            className: "text-lg font-semibold mb-4" 
+                        }, "Spinner (Linear)"),
+                        React.createElement('div', { 
+                            key: 'container-linear',
+                            className: "flex justify-center items-center h-32 bg-gray-100 rounded" 
+                        }, React.createElement(Spinner, {
+                            size: size,
+                            color: color,
+                            variant: "linear",
+                            strokeWidth: 1.5,
+                            spin: spin
+                        }))
+                    ]),
+                    
+                    React.createElement('div', { 
+                        key: 'arrow-right',
+                        className: "text-center p-6 border rounded-lg" 
+                    }, [
+                        React.createElement('h3', { 
+                            key: 'title-arrow',
+                            className: "text-lg font-semibold mb-4" 
+                        }, "Arrow Right"),
+                        React.createElement('div', { 
+                            key: 'container-arrow',
+                            className: "flex justify-center items-center h-32 bg-gray-100 rounded" 
+                        }, React.createElement(ArrowRight, {
+                            size: size,
+                            color: color,
+                            variant: variant,
+                            strokeWidth: 2
+                        }))
+                    ]),
+                    
+                    React.createElement('div', { 
+                        key: 'heart',
+                        className: "text-center p-6 border rounded-lg" 
+                    }, [
+                        React.createElement('h3', { 
+                            key: 'title-heart',
+                            className: "text-lg font-semibold mb-4" 
+                        }, "Heart"),
+                        React.createElement('div', { 
+                            key: 'container-heart',
+                            className: "flex justify-center items-center h-32 bg-gray-100 rounded" 
+                        }, React.createElement(Heart, {
+                            size: size,
+                            color: color,
+                            variant: variant,
+                            strokeWidth: 2
+                        }))
+                    ]),
+                    
+                    React.createElement('div', { 
+                        key: 'check',
+                        className: "text-center p-6 border rounded-lg" 
+                    }, [
+                        React.createElement('h3', { 
+                            key: 'title-check',
+                            className: "text-lg font-semibold mb-4" 
+                        }, "Check"),
+                        React.createElement('div', { 
+                            key: 'container-check',
+                            className: "flex justify-center items-center h-32 bg-gray-100 rounded" 
+                        }, React.createElement(Check, {
+                            size: size,
+                            color: color,
+                            variant: variant,
+                            strokeWidth: 2
+                        }))
+                    ])
+                ])
+            ]);
+        };
+        
+        // Render
+        ReactDOM.render(React.createElement(IconsPreview), document.getElementById('root'));
+    </script>
+</body>
+</html>

@@ -192,9 +192,13 @@ function generateCSS() {
 
 /* ------------------------ 🧱 4. React Component Üretimi ---------------------- */
 function generateReactComponents() {
-  const OUT_DIR = path.join("src", "Components", "Icons");
+  const OUT_DIR = path.join("src", "components");
   if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
 
+  if (!fs.existsSync(SVG_DIR)) {
+    console.log("⚠️  SVG directory not found, skipping React component generation");
+    return;
+  }
   const files = fs.readdirSync(SVG_DIR).filter((f) => f.endsWith(".svg")).sort();
 
   const toReactAttrs = (s) => {
