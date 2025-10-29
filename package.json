@@ -1,5 +1,5 @@
 {
-  "name": "ophelia-icons",
+  "name": "ophelia-ui-icons",
   "version": "1.0.0",
   "description": "Modern React icon library with rich props and variants",
   "main": "dist/index.js",
