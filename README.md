@@ -1,4 +1,4 @@
-# @ksocial/icons
+# ophelia-icons
 
 A modern React icon library with rich props, variants, and animations.
 
@@ -15,17 +15,17 @@ A modern React icon library with rich props, variants, and animations.
 ## Installation
 
 ```bash
-npm install @ksocial/icons
+npm install ophelia-icons
 # or
-yarn add @ksocial/icons
+yarn add ophelia-icons
 # or
-pnpm add @ksocial/icons
+pnpm add ophelia-icons
 ```
 
 ## Quick Start
 
 ```tsx
-import { ArrowRight, Heart, Check } from '@ksocial/icons';
+import { ArrowRight, Heart, Check } from 'ophelia-icons';
 
 function App() {
   return (
@@ -192,4 +192,4 @@ npm run dev
 
 ## License
 
-MIT © KSocial Team
+MIT © Ophelia Team

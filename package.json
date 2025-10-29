@@ -1,5 +1,5 @@
 {
-  "name": "@ksocial/icons",
+  "name": "ophelia-icons",
   "version": "1.0.0",
   "description": "Modern React icon library with rich props and variants",
   "main": "dist/index.js",
@@ -25,7 +25,7 @@
     "ui",
     "components"
   ],
-  "author": "KSocial Team",
+  "author": "Ophelia Team",
   "license": "MIT",
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -47,10 +47,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ksocial/icons.git"
+    "url": "https://github.com/ophelia/icons.git"
   },
   "bugs": {
-    "url": "https://github.com/ksocial/icons/issues"
+    "url": "https://github.com/ophelia/icons/issues"
   },
-  "homepage": "https://github.com/ksocial/icons#readme"
+  "homepage": "https://github.com/ophelia/icons#readme"
 }

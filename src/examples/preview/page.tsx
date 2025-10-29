@@ -9,7 +9,7 @@ export default function IconsPreviewPage() {
 
   return (
     <div className="p-8">
-      <h1 className="text-3xl font-bold mb-8">KSocial Icons Preview</h1>
+      <h1 className="text-3xl font-bold mb-8">Ophelia Icons Preview</h1>
       
       <div className="mb-8">
         <div className="mb-4">
