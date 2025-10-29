@@ -1,6 +1,6 @@
 {
   "name": "ophelia-ui-icons",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Modern React icon library with rich props and variants",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
