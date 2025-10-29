@@ -130,13 +130,13 @@ const Home: React.FC<IconProps> = ({
       {description && <desc>{description}</desc>}
       {isDuotone && secondaryColor && (
         <defs>
-          <linearGradient id="duotone-${compName}" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient id="duotone-Home" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor={color || 'currentColor'} />
             <stop offset="100%" stopColor={secondaryColor} />
           </linearGradient>
         </defs>
       )}
-      <g fill={isDuotone ? `url(#duotone-${compName})` : undefined}>
+      <g fill={isDuotone ? `url(#duotone-Home)` : undefined}>
         
   <path strokeMiterlimit="10" d="M2 8.5c0-3.5 2-5 5-5h10c3 0 5 1.5 5 5v7c0 3.5-2 5-5 5H7" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
   <path strokeMiterlimit="10" d="m17 9-3.13 2.5c-1.03.82-2.72.82-3.75 0L7 9M2 16.5h6M2 12.5h3" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

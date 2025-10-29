@@ -130,13 +130,13 @@ const ArrowLeft: React.FC<IconProps> = ({
       {description && <desc>{description}</desc>}
       {isDuotone && secondaryColor && (
         <defs>
-          <linearGradient id="duotone-${compName}" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient id="duotone-ArrowLeft" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor={color || 'currentColor'} />
             <stop offset="100%" stopColor={secondaryColor} />
           </linearGradient>
         </defs>
       )}
-      <g fill={isDuotone ? `url(#duotone-${compName})` : undefined}>
+      <g fill={isDuotone ? `url(#duotone-ArrowLeft)` : undefined}>
         <path strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M11.2684 18L5.43506 12M5.43506 12L11.2684 6M5.43506 12H19.4351" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </g>
     </svg>

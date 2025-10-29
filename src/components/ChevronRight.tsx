@@ -130,13 +130,13 @@ const ChevronRight: React.FC<IconProps> = ({
       {description && <desc>{description}</desc>}
       {isDuotone && secondaryColor && (
         <defs>
-          <linearGradient id="duotone-${compName}" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient id="duotone-ChevronRight" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor={color || 'currentColor'} />
             <stop offset="100%" stopColor={secondaryColor} />
           </linearGradient>
         </defs>
       )}
-      <g fill={isDuotone ? `url(#duotone-${compName})` : undefined}>
+      <g fill={isDuotone ? `url(#duotone-ChevronRight)` : undefined}>
         <path strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M9.60002 7.2L14.4 12L9.60002 16.8" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </g>
     </svg>

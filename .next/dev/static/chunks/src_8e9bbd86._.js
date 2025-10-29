@@ -76,7 +76,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-Advert",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -110,7 +110,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-Advert)` : undefined,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                         d: "M21.132 17.232H2.86803C2.54403 17.232 2.28003 16.968 2.28003 16.644V5.48401C2.28003 4.04401 3.45603 2.86801 4.89603 2.86801H19.104C20.544 2.86801 21.72 4.04401 21.72 5.48401V16.644C21.72 16.968 21.456 17.232 21.132 17.232ZM3.45603 16.068H20.556V5.48401C20.556 4.69201 19.908 4.04401 19.116 4.04401H4.89603C4.10403 4.04401 3.45603 4.69201 3.45603 5.48401V16.068ZM21.132 19.248H2.86803C2.54403 19.248 2.28003 18.984 2.28003 18.66C2.28003 18.336 2.54403 18.072 2.86803 18.072H21.132C21.456 18.072 21.72 18.336 21.72 18.66C21.72 18.984 21.456 19.248 21.132 19.248Z",
@@ -226,7 +226,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-Eye",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -260,7 +260,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-Eye)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     d: "M13.09 7.42915C13.09 8.71894 12.0154 9.76451 10.69 9.76451C9.36448 9.76451 8.28997 8.71894 8.28997 7.42915C8.28997 6.13937 9.36448 5.0938 10.69 5.0938C12.0154 5.0938 13.09 6.13937 13.09 7.42915Z",
                     fill: "currentColor"
@@ -366,7 +366,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-Profile",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -400,7 +400,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-Profile)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     d: "M12.4351 15.1738C16.7735 15.1738 20.4347 15.8789 20.4351 18.5986C20.4351 21.3197 16.7497 22 12.4351 22C8.09755 22 4.43524 21.295 4.43506 18.5752C4.43506 15.8542 8.12045 15.1738 12.4351 15.1738ZM12.4351 2C15.3741 2 17.729 4.35401 17.729 7.29102C17.729 10.228 15.3742 12.583 12.4351 12.583C9.49696 12.583 7.14111 10.228 7.14111 7.29102C7.14114 4.35401 9.49697 2 12.4351 2Z",
                     fill: "currentColor"
@@ -506,7 +506,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-ArrowDown",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -540,7 +540,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-ArrowDown)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     strokeWidth: "1.5",
                     strokeLinecap: "round",
@@ -653,7 +653,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-ArrowLeft",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -687,7 +687,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-ArrowLeft)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     strokeWidth: "1.5",
                     strokeLinecap: "round",
@@ -800,7 +800,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-ArrowRight",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -834,7 +834,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-ArrowRight)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     strokeWidth: "1.5",
                     strokeLinecap: "round",
@@ -947,7 +947,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-ArrowUp",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -981,7 +981,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-ArrowUp)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     strokeWidth: "1.5",
                     strokeLinecap: "round",
@@ -1094,7 +1094,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-Check",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -1128,7 +1128,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-Check)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     d: "M18.1632 7.02326L8.16325 17.0233C8.07615 17.1107 7.97266 17.18 7.8587 17.2273C7.74475 17.2746 7.62257 17.299 7.49918 17.299C7.3758 17.299 7.25362 17.2746 7.13967 17.2273C7.02571 17.18 6.92222 17.1107 6.83512 17.0233L2.46012 12.6483C2.37292 12.5611 2.30374 12.4575 2.25655 12.3436C2.20935 12.2296 2.18506 12.1075 2.18506 11.9842C2.18506 11.8609 2.20935 11.7387 2.25655 11.6248C2.30374 11.5109 2.37292 11.4073 2.46012 11.3201C2.54733 11.2329 2.65086 11.1638 2.7648 11.1166C2.87874 11.0694 3.00086 11.0451 3.12418 11.0451C3.24751 11.0451 3.36963 11.0694 3.48357 11.1166C3.59751 11.1638 3.70104 11.2329 3.78825 11.3201L7.49997 15.0319L16.8367 5.69669C17.0128 5.52057 17.2517 5.42163 17.5007 5.42163C17.7498 5.42163 17.9887 5.52057 18.1648 5.69669C18.3409 5.87281 18.4399 6.11169 18.4399 6.36076C18.4399 6.60983 18.3409 6.8487 18.1648 7.02482L18.1632 7.02326Z",
                     fill: "currentColor"
@@ -1234,7 +1234,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-ChevronDown",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -1268,7 +1268,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-ChevronDown)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     strokeWidth: "1.5",
                     strokeLinecap: "round",
@@ -1381,7 +1381,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-ChevronLeft",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -1415,7 +1415,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-ChevronLeft)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     strokeWidth: "1.5",
                     strokeLinecap: "round",
@@ -1528,7 +1528,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-ChevronRight",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -1562,7 +1562,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-ChevronRight)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     strokeWidth: "1.5",
                     strokeLinecap: "round",
@@ -1675,7 +1675,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-ChevronUp",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -1709,7 +1709,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-ChevronUp)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     strokeWidth: "1.5",
                     strokeLinecap: "round",
@@ -1822,7 +1822,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-Menu",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -1856,7 +1856,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-Menu)` : undefined,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                         strokeWidth: "1.5",
@@ -2001,7 +2001,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-Png",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -2035,7 +2035,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-Png)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     d: "M12.05 27H9.05005C8.65222 27 8.27069 27.158 7.98939 27.4393C7.70808 27.7206 7.55005 28.1022 7.55005 28.5V39C7.55005 39.3978 7.70808 39.7794 7.98939 40.0607C8.27069 40.342 8.65222 40.5 9.05005 40.5C9.44787 40.5 9.8294 40.342 10.1107 40.0607C10.392 39.7794 10.55 39.3978 10.55 39V37.5H12.05C13.4424 37.5 14.7778 36.9469 15.7624 35.9623C16.7469 34.9777 17.3 33.6424 17.3 32.25C17.3 30.8576 16.7469 29.5223 15.7624 28.5377C14.7778 27.5531 13.4424 27 12.05 27ZM12.05 34.5H10.55V30H12.05C12.6468 30 13.2191 30.2371 13.641 30.659C14.063 31.081 14.3 31.6533 14.3 32.25C14.3 32.8467 14.063 33.419 13.641 33.841C13.2191 34.2629 12.6468 34.5 12.05 34.5ZM42.8 37.6631C42.8 38.0495 42.6509 38.4209 42.3838 38.7C41.8615 39.2622 41.2299 39.7119 40.5277 40.0214C39.8255 40.3309 39.0674 40.4938 38.3 40.5C34.9907 40.5 32.3 37.4719 32.3 33.75C32.3 30.0281 34.9907 27 38.3 27C39.4026 27.0037 40.4788 27.3374 41.39 27.9581C41.72 28.1819 41.9475 28.5276 42.0226 28.9191C42.0977 29.3107 42.0141 29.716 41.7904 30.0459C41.5666 30.3759 41.2209 30.6034 40.8294 30.6785C40.4378 30.7536 40.0325 30.67 39.7025 30.4463C39.2911 30.1588 38.802 30.0032 38.3 30C36.6463 30 35.3 31.6875 35.3 33.75C35.3 35.8125 36.6463 37.5 38.3 37.5C38.8416 37.494 39.3671 37.3153 39.8 36.99V36C39.4022 36 39.0207 35.842 38.7394 35.5607C38.4581 35.2794 38.3 34.8978 38.3 34.5C38.3 34.1022 38.4581 33.7206 38.7394 33.4393C39.0207 33.158 39.4022 33 39.8 33H41.3C41.6979 33 42.0794 33.158 42.3607 33.4393C42.642 33.7206 42.8 34.1022 42.8 34.5V37.6631ZM30.05 28.5V39C30.0501 39.3179 29.9491 39.6276 29.7618 39.8844C29.5744 40.1412 29.3103 40.3318 29.0075 40.4287C28.8597 40.4763 28.7053 40.5003 28.55 40.5C28.3113 40.5 28.076 40.443 27.8637 40.3338C27.6514 40.2245 27.4682 40.0662 27.3294 39.8719L22.55 33.1875V39C22.55 39.3978 22.392 39.7794 22.1107 40.0607C21.8294 40.342 21.4479 40.5 21.05 40.5C20.6522 40.5 20.2707 40.342 19.9894 40.0607C19.7081 39.7794 19.55 39.3978 19.55 39V28.5C19.55 28.1822 19.651 27.8726 19.8383 27.6158C20.0256 27.3591 20.2896 27.1685 20.5923 27.0715C20.8949 26.9745 21.2206 26.9762 21.5222 27.0762C21.8239 27.1762 22.086 27.3695 22.2707 27.6281L27.05 34.3125V28.5C27.05 28.1022 27.2081 27.7206 27.4894 27.4393C27.7707 27.158 28.1522 27 28.55 27C28.9479 27 29.3294 27.158 29.6107 27.4393C29.892 27.7206 30.05 28.1022 30.05 28.5ZM9.80005 22.5C10.1979 22.5 10.5794 22.342 10.8607 22.0607C11.142 21.7794 11.3 21.3978 11.3 21V7.5H27.8V16.5C27.8 16.8978 27.9581 17.2794 28.2394 17.5607C28.5207 17.842 28.9022 18 29.3 18H38.3V21C38.3 21.3978 38.4581 21.7794 38.7394 22.0607C39.0207 22.342 39.4022 22.5 39.8 22.5C40.1979 22.5 40.5794 22.342 40.8607 22.0607C41.142 21.7794 41.3 21.3978 41.3 21V16.5C41.3002 16.303 41.2615 16.1078 41.1863 15.9257C41.111 15.7436 41.0005 15.5782 40.8613 15.4388L30.3613 4.93875C30.2219 4.7995 30.0564 4.68908 29.8743 4.6138C29.6922 4.53851 29.4971 4.49985 29.3 4.5H11.3C10.5044 4.5 9.74134 4.81607 9.17873 5.37868C8.61612 5.94129 8.30005 6.70435 8.30005 7.5V21C8.30005 21.3978 8.45808 21.7794 8.73939 22.0607C9.02069 22.342 9.40222 22.5 9.80005 22.5ZM30.8 9.62063L36.1794 15H30.8V9.62063Z",
                     fill: "currentColor"
@@ -2141,7 +2141,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-Revenue",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -2175,7 +2175,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-Revenue)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     d: "M7.63506 16.5C8.03288 16.5 8.41441 16.342 8.69572 16.0607C8.97702 15.7794 9.13506 15.3978 9.13506 15C9.13506 14.6022 8.97702 14.2206 8.69572 13.9393C8.41441 13.658 8.03288 13.5 7.63506 13.5C7.23723 13.5 6.8557 13.658 6.5744 13.9393C6.29309 14.2206 6.13506 14.6022 6.13506 15C6.13506 15.3978 6.29309 15.7794 6.5744 16.0607C6.8557 16.342 7.23723 16.5 7.63506 16.5ZM21.7546 5.25L6.83556 3C6.18306 3 5.43456 3.672 5.43456 4.5V6.75H3.33456C2.56206 6.75 1.93506 7.422 1.93506 8.25V21C1.93506 21.828 2.56206 22.5 3.33456 22.5H21.5356C22.3081 22.5 22.9351 21.828 22.9351 21V6.75C22.9351 5.922 22.4056 5.25 21.7546 5.25ZM3.33456 21H21.5356V8.25H3.33456V21ZM6.83556 6.75V4.5L21.5356 6.75H6.83556Z",
                     fill: "currentColor"
@@ -2281,7 +2281,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-Search",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -2315,7 +2315,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-Search)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     d: "M20.4 20.4L16.0551 16.0552M3.59998 10.8414C3.59998 6.84208 6.84205 3.60001 10.8414 3.60001C14.8407 3.60001 18.0827 6.84208 18.0827 10.8414C18.0827 14.8407 14.8407 18.0828 10.8414 18.0828C6.84205 18.0828 3.59998 14.8407 3.59998 10.8414Z",
                     fill: "currentColor"
@@ -2421,7 +2421,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-SignUp",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -2455,7 +2455,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-SignUp)` : undefined,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
                         clipPath: "url(#clip0_231_1239)",
@@ -2592,7 +2592,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-X",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -2626,7 +2626,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-X)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     d: "M16.2882 15.6967C16.4644 15.8728 16.5633 16.1117 16.5633 16.3608C16.5633 16.6099 16.4644 16.8487 16.2882 17.0248C16.1121 17.201 15.8733 17.2999 15.6242 17.2999C15.3751 17.2999 15.1362 17.201 14.9601 17.0248L9.99997 12.0631L5.03825 17.0233C4.86213 17.1994 4.62326 17.2983 4.37418 17.2983C4.12511 17.2983 3.88624 17.1994 3.71012 17.0233C3.534 16.8472 3.43506 16.6083 3.43506 16.3592C3.43506 16.1101 3.534 15.8713 3.71012 15.6952L8.67184 10.735L3.71168 5.77328C3.53556 5.59716 3.43662 5.35829 3.43662 5.10922C3.43662 4.86015 3.53556 4.62128 3.71168 4.44516C3.8878 4.26904 4.12668 4.17009 4.37575 4.17009C4.62482 4.17009 4.86369 4.26904 5.03981 4.44516L9.99997 9.40687L14.9617 4.44438C15.1378 4.26825 15.3767 4.16931 15.6257 4.16931C15.8748 4.16931 16.1137 4.26825 16.2898 4.44438C16.4659 4.6205 16.5649 4.85937 16.5649 5.10844C16.5649 5.35751 16.4659 5.59638 16.2898 5.7725L11.3281 10.735L16.2882 15.6967Z",
                     fill: "currentColor"
@@ -2732,7 +2732,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-CombinedShape",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -2766,7 +2766,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-CombinedShape)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     opacity: "0.5",
                     d: "M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5ZM3 7.16699C2.99982 7.99527 2.32832 8.66699 1.5 8.66699C0.671681 8.66699 0.000175953 7.99527 0 7.16699C0 6.33856 0.671573 5.66699 1.5 5.66699C2.32843 5.66699 3 6.33856 3 7.16699ZM3 12.833C3 13.6614 2.32843 14.333 1.5 14.333C0.671573 14.333 0 13.6614 0 12.833C0.000175714 12.0047 0.671681 11.333 1.5 11.333C2.32832 11.333 2.99982 12.0047 3 12.833Z",
@@ -2874,7 +2874,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-Flag1",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -2908,7 +2908,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-Flag1)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     d: "M6.75 13.0373V5.24325L16.839 5.25075L14.0182 9.14025L16.8397 13.0313L6.75 13.0373ZM18.477 12.7343L15.8715 9.14025L18.477 5.54625C18.7627 5.15175 18.8175 4.71075 18.6262 4.33725C18.4357 3.96375 18.0465 3.75 17.5582 3.75H6.7515C6.35452 3.7494 5.97351 3.90627 5.69203 4.1862C5.41055 4.46614 5.25159 4.84628 5.25 5.24325V20.25C5.25 20.4489 5.32902 20.6397 5.46967 20.7803C5.61032 20.921 5.80109 21 6 21C6.19891 21 6.38968 20.921 6.53033 20.7803C6.67098 20.6397 6.75 20.4489 6.75 20.25V14.5313H17.5582C18.0495 14.5313 18.441 14.3175 18.6307 13.9448C18.8205 13.5728 18.765 13.131 18.477 12.7343Z",
                     fill: "currentColor"
@@ -3014,7 +3014,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-Like",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -3048,7 +3048,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-Like)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
                     opacity: "0.6",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3161,7 +3161,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-Spinner",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -3195,7 +3195,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-Spinner)` : undefined,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
                         className: "opacity-25",
@@ -3316,7 +3316,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-Star",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -3350,7 +3350,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-Star)` : undefined,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     d: "M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z",
                     fill: "currentColor"
@@ -3456,7 +3456,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
             }, ("TURBOPACK compile-time value", void 0)),
             isDuotone && secondaryColor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                    id: "duotone-${compName}",
+                    id: "duotone-Home",
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
@@ -3490,7 +3490,7 @@ visible = true, opacity, className = "", style, ...rest })=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                fill: isDuotone ? `url(#duotone-${compName})` : undefined,
+                fill: isDuotone ? `url(#duotone-Home)` : undefined,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                         strokeMiterlimit: "10",

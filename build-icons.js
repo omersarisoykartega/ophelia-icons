@@ -399,13 +399,13 @@ const ${compName}: React.FC<IconProps> = ({
       {description && <desc>{description}</desc>}
       {isDuotone && secondaryColor && (
         <defs>
-          <linearGradient id="duotone-\${compName}" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient id="duotone-${compName}" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor={color || 'currentColor'} />
             <stop offset="100%" stopColor={secondaryColor} />
           </linearGradient>
         </defs>
       )}
-      <g fill={isDuotone ? \`url(#duotone-\${compName})\` : undefined}>
+      <g fill={isDuotone ? \`url(#duotone-${compName})\` : undefined}>
         ${reactInner}
       </g>
     </svg>

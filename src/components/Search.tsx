@@ -130,13 +130,13 @@ const Search: React.FC<IconProps> = ({
       {description && <desc>{description}</desc>}
       {isDuotone && secondaryColor && (
         <defs>
-          <linearGradient id="duotone-${compName}" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient id="duotone-Search" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor={color || 'currentColor'} />
             <stop offset="100%" stopColor={secondaryColor} />
           </linearGradient>
         </defs>
       )}
-      <g fill={isDuotone ? `url(#duotone-${compName})` : undefined}>
+      <g fill={isDuotone ? `url(#duotone-Search)` : undefined}>
         <path d="M20.4 20.4L16.0551 16.0552M3.59998 10.8414C3.59998 6.84208 6.84205 3.60001 10.8414 3.60001C14.8407 3.60001 18.0827 6.84208 18.0827 10.8414C18.0827 14.8407 14.8407 18.0828 10.8414 18.0828C6.84205 18.0828 3.59998 14.8407 3.59998 10.8414Z" fill="currentColor"/>
       </g>
     </svg>

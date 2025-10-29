@@ -130,13 +130,13 @@ const Eye: React.FC<IconProps> = ({
       {description && <desc>{description}</desc>}
       {isDuotone && secondaryColor && (
         <defs>
-          <linearGradient id="duotone-${compName}" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient id="duotone-Eye" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor={color || 'currentColor'} />
             <stop offset="100%" stopColor={secondaryColor} />
           </linearGradient>
         </defs>
       )}
-      <g fill={isDuotone ? `url(#duotone-${compName})` : undefined}>
+      <g fill={isDuotone ? `url(#duotone-Eye)` : undefined}>
         <path d="M13.09 7.42915C13.09 8.71894 12.0154 9.76451 10.69 9.76451C9.36448 9.76451 8.28997 8.71894 8.28997 7.42915C8.28997 6.13937 9.36448 5.0938 10.69 5.0938C12.0154 5.0938 13.09 6.13937 13.09 7.42915Z" fill="currentColor"/>
       </g>
     </svg>
