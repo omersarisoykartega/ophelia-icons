@@ -15,8 +15,8 @@ try {
   optimize = undefined;
 }
 
-const SVG_DIR = "icons/site-icons/svg";
-const DIST_DIR = "icons/site-icons/dist";
+const SVG_DIR = "src/icons";
+const DIST_DIR = "src/components";
 const FONT_NAME = "pendigit-site-icon";
 
 /* ----------------------------- 🧩 1. SVG Fixleme ----------------------------- */
