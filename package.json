@@ -11,12 +11,11 @@
     "README.md"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "npm run build:icons",
     "build:icons": "node build-icons.js",
     "dev": "next dev",
-    "dev:rollup": "rollup -c -w",
     "preview": "next dev",
-    "prepublishOnly": "npm run build:icons && npm run build",
+    "prepublishOnly": "npm run build",
     "test": "echo \"No tests yet\" && exit 0"
   },
   "keywords": [

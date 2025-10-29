@@ -4,7 +4,7 @@ import typescript from '@rollup/plugin-typescript';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import dts from 'rollup-plugin-dts';
 
-const packageJson = require('./icon-library-package.json');
+const packageJson = require('./package.json');
 
 export default [
   {
@@ -23,16 +23,10 @@ export default [
     ],
     plugins: [
       peerDepsExternal(),
-      resolve({
-        browser: true,
-      }),
+      resolve(),
       commonjs(),
-      typescript({
-        tsconfig: './tsconfig.json',
-        exclude: ['**/*.test.*', '**/*.stories.*'],
-      }),
+      typescript({ tsconfig: './tsconfig.json' }),
     ],
-    external: ['react', 'react-dom'],
   },
   {
     input: 'dist/index.d.ts',

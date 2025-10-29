@@ -21,3 +21,4 @@ export { default as Flag1 } from "./Flag1";
 export { default as Like } from "./Like";
 export { default as Spinner } from "./Spinner";
 export { default as Star } from "./Star";
+export { default as Home } from "./Home";
