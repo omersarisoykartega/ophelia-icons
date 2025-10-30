@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
+import Script from "next/script";
 import * as Icons from "../../components";
 
 const allIcons = Object.entries(Icons).filter(([, value]) => typeof value === "function");
@@ -19,6 +20,7 @@ export default function IconsPreviewPage() {
   const [pulse, setPulse] = useState<boolean>(false);
   const [bounce, setBounce] = useState<boolean>(false);
   const [opacity, setOpacity] = useState<number>(1);
+  const [iconClassName, setIconClassName] = useState<string>("");
   const [showCode, setShowCode] = useState<boolean>(false);
   const [copiedIcon, setCopiedIcon] = useState<string | null>(null);
 
@@ -28,24 +30,37 @@ export default function IconsPreviewPage() {
     return allIcons.filter(([name]) => name.toLowerCase().includes(q));
   }, [query]);
 
-  const copyToClipboard = async (iconName: string) => {
-    const iconCode = `import { ${iconName} } from "./src/components";
+  useEffect(() => {
+    const saved = typeof window !== 'undefined' ? localStorage.getItem('iconsPreviewClassName') : null;
+    if (saved) setIconClassName(saved);
+  }, []);
 
-<${iconName}
-  size={${size}}
-  color="${color}"
-  variant="${variant}"
-  strokeWidth={${strokeWidth}}
-  rotate={${rotate}}
-  mirrored={${mirrored}}
-  flipped={${flipped}}
-  spin={${spin}}
-  pulse={${pulse}}
-  bounce={${bounce}}
-  opacity={${opacity}}
-  ${secondaryColor ? `secondaryColor="${secondaryColor}"` : ''}
-  title="${iconName} icon"
-/>`;
+  const copyToClipboard = async (iconName: string) => {
+    const hasTextClass = /(^|\s)(text-|hover:text-)/.test(iconClassName);
+    const classLine = `className="${[`text-[${color}]`, iconClassName].filter(Boolean).join(' ').trim()}"`;
+
+    const lines: string[] = [
+      `import { ${iconName} } from "./src/components";`,
+      "",
+      `<${iconName}`,
+      `  size={${size}}`,
+      hasTextClass ? undefined : `  color="${color}"`,
+      `  variant="${variant}"`,
+      (variant === 'outlined' || variant === 'linear') && strokeWidth !== 1.5 ? `  strokeWidth={${strokeWidth}}` : undefined,
+      rotate !== 0 ? `  rotate={${rotate}}` : undefined,
+      mirrored ? `  mirrored={${mirrored}}` : undefined,
+      flipped ? `  flipped={${flipped}}` : undefined,
+      spin ? `  spin={${spin}}` : undefined,
+      pulse ? `  pulse={${pulse}}` : undefined,
+      bounce ? `  bounce={${bounce}}` : undefined,
+      opacity !== 1 ? `  opacity={${opacity}}` : undefined,
+      variant === 'duotone' && secondaryColor ? `  secondaryColor="${secondaryColor}"` : undefined,
+      classLine,
+      `  title="${iconName}"`,
+      `/>`
+    ].filter(Boolean) as string[];
+
+    const iconCode = lines.join("\n");
 
     try {
       await navigator.clipboard.writeText(iconCode);
@@ -57,7 +72,9 @@ export default function IconsPreviewPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white p-6">
+    <div className="min-h-screen bg-white text-black p-6">
+      {/* Tailwind CDN to enable dynamic className utilities in preview */}
+      <Script src="https://cdn.tailwindcss.com" strategy="afterInteractive" />
       <div className="max-w-7xl mx-auto space-y-6">
         <div className="flex justify-between items-center">
           <h1 className="text-2xl md:text-3xl font-bold">🎨 Ophelia Icons Library</h1>
@@ -71,14 +88,14 @@ export default function IconsPreviewPage() {
               />
               <span className="text-sm">Show Code</span>
             </label>
-            <div className="text-sm text-gray-500 dark:text-gray-400">
+            <div className="text-sm text-gray-500">
               {filtered.length} icons
             </div>
           </div>
         </div>
 
         {/* Advanced Controls */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 bg-gray-50 dark:bg-zinc-900 p-6 rounded-xl border border-gray-200 dark:border-zinc-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 bg-gray-50 p-6 rounded-xl border border-gray-200">
           {/* Search */}
           <div className="space-y-2">
             <label className="block text-sm font-medium">Search Icons</label>
@@ -86,7 +103,7 @@ export default function IconsPreviewPage() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search by name..."
-              className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 rounded-lg border border-gray-300 bg-white outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
@@ -109,13 +126,33 @@ export default function IconsPreviewPage() {
             <select
               value={variant}
               onChange={(e) => setVariant(e.target.value as any)}
-              className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 outline-none"
+              className="w-full px-3 py-2 rounded-lg border border-gray-300 bg-white outline-none"
             >
               <option value="filled">Filled</option>
               <option value="outlined">Outlined</option>
               <option value="duotone">Duotone</option>
               <option value="linear">Linear</option>
             </select>
+          </div>
+
+          {/* className (Tailwind/CSS) */}
+          <div className="space-y-2 md:col-span-2">
+            <label className="block text-sm font-medium">className (örn: hover:text-red-600 hover:scale-110)</label>
+            <div className="flex gap-2">
+              <input
+                value={iconClassName}
+                onChange={(e) => setIconClassName(e.target.value)}
+                onBlur={() => { try { localStorage.setItem('iconsPreviewClassName', iconClassName); } catch {} }}
+                placeholder="hover:text-blue-600 transition duration-200"
+                className="flex-1 px-3 py-2 rounded-lg border border-gray-300 bg-white outline-none"
+              />
+              <button
+                onClick={() => { try { localStorage.setItem('iconsPreviewClassName', iconClassName); } catch {} }}
+                className="px-3 py-2 rounded-lg bg-gray-200 hover:bg-gray-300"
+              >
+                Save
+              </button>
+            </div>
           </div>
 
           {/* Primary Color */}
@@ -126,12 +163,12 @@ export default function IconsPreviewPage() {
                 type="color"
                 value={color}
                 onChange={(e) => setColor(e.target.value)}
-                className="w-12 h-10 rounded border border-gray-300 dark:border-zinc-700"
+                className="w-12 h-10 rounded border border-gray-300"
               />
               <input
                 value={color}
                 onChange={(e) => setColor(e.target.value)}
-                className="flex-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 outline-none"
+                className="flex-1 px-3 py-2 rounded-lg border border-gray-300 bg-white outline-none"
               />
             </div>
           </div>
@@ -145,12 +182,12 @@ export default function IconsPreviewPage() {
                   type="color"
                   value={secondaryColor}
                   onChange={(e) => setSecondaryColor(e.target.value)}
-                  className="w-12 h-10 rounded border border-gray-300 dark:border-zinc-700"
+                className="w-12 h-10 rounded border border-gray-300"
                 />
                 <input
                   value={secondaryColor}
                   onChange={(e) => setSecondaryColor(e.target.value)}
-                  className="flex-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 outline-none"
+                  className="flex-1 px-3 py-2 rounded-lg border border-gray-300 bg-white outline-none"
                 />
               </div>
             </div>
@@ -181,18 +218,18 @@ export default function IconsPreviewPage() {
                 placeholder="Rotate"
                 value={rotate}
                 onChange={(e) => setRotate(parseInt(e.target.value || "0", 10))}
-                className="px-2 py-1 rounded border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 outline-none text-sm"
+                className="px-2 py-1 rounded border border-gray-300 bg-white outline-none text-sm"
               />
               <div className="flex gap-1">
                 <button
                   onClick={() => setMirrored(!mirrored)}
-                  className={`px-2 py-1 rounded text-xs ${mirrored ? 'bg-blue-500 text-white' : 'bg-gray-200 dark:bg-zinc-700'}`}
+                  className={`px-2 py-1 rounded text-xs ${mirrored ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
                 >
                   ↔️
                 </button>
                 <button
                   onClick={() => setFlipped(!flipped)}
-                  className={`px-2 py-1 rounded text-xs ${flipped ? 'bg-blue-500 text-white' : 'bg-gray-200 dark:bg-zinc-700'}`}
+                  className={`px-2 py-1 rounded text-xs ${flipped ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
                 >
                   ↕️
                 </button>
@@ -254,14 +291,14 @@ export default function IconsPreviewPage() {
           {filtered.map(([name, Comp]) => (
             <div
               key={name}
-              className="group border border-gray-200 dark:border-zinc-800 rounded-lg p-4 flex flex-col items-center gap-3 bg-white dark:bg-zinc-900 hover:shadow-lg transition-all duration-200 relative"
+              className="group border border-gray-200 rounded-lg p-4 flex flex-col items-center gap-3 bg-white hover:shadow-lg transition-all duration-200 relative"
             >
               {/* Icon */}
               <div className="flex items-center justify-center">
                 {/* @ts-ignore - dynamic component */}
                 <Comp 
                   size={size} 
-                  color={color}
+                  color={undefined}
                   secondaryColor={variant === 'duotone' ? secondaryColor : undefined}
                   variant={variant}
                   strokeWidth={strokeWidth}
@@ -272,19 +309,19 @@ export default function IconsPreviewPage() {
                   pulse={pulse}
                   bounce={bounce}
                   opacity={opacity}
-                  className="transition-colors group-hover:text-blue-500"
+                  className={`transition duration-200 text-[${color}] ${iconClassName}`}
                 />
               </div>
               
               {/* Name */}
-              <div className="text-xs text-center break-words leading-tight opacity-80 font-mono">
+              <div className="text-xs text-center wrap-break-word leading-tight opacity-80 font-mono">
                 {name}
               </div>
               
               {/* Copy Button */}
               <button
                 onClick={() => copyToClipboard(name)}
-                className="absolute top-2 right-2 p-1 rounded-full bg-gray-100 dark:bg-zinc-800 hover:bg-gray-200 dark:hover:bg-zinc-700 transition-colors opacity-0 group-hover:opacity-100"
+                className="absolute top-2 right-2 p-1 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors opacity-0 group-hover:opacity-100"
                 title="Copy code"
               >
                 {copiedIcon === name ? (
@@ -298,18 +335,28 @@ export default function IconsPreviewPage() {
               {showCode && (
                 <div className="absolute bottom-0 left-0 right-0 bg-black text-white text-xs p-2 rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity max-h-32 overflow-y-auto">
                   <pre className="whitespace-pre-wrap">
-{`<${name}
-  size={${size}}
-  color="${color}"
-  variant="${variant}"${variant === 'duotone' ? `\n  secondaryColor="${secondaryColor}"` : ''}${(variant === 'outlined' || variant === 'linear') ? `\n  strokeWidth={${strokeWidth}}` : ''}
-  rotate={${rotate}}
-  mirrored={${mirrored}}
-  flipped={${flipped}}
-  spin={${spin}}
-  pulse={${pulse}}
-  bounce={${bounce}}
-  opacity={${opacity}}
-/>`}
+{(() => {
+  const hasTextClass = /(^|\s)(text-|hover:text-)/.test(iconClassName);
+  const lines = [
+    `<${name}`,
+    `  size={${size}}`,
+    hasTextClass ? undefined : `  color="${color}"`,
+    `  variant="${variant}"`,
+    (variant === 'outlined' || variant === 'linear') && strokeWidth !== 1.5 ? `  strokeWidth={${strokeWidth}}` : undefined,
+    rotate !== 0 ? `  rotate={${rotate}}` : undefined,
+    mirrored ? `  mirrored={${mirrored}}` : undefined,
+    flipped ? `  flipped={${flipped}}` : undefined,
+    spin ? `  spin={${spin}}` : undefined,
+    pulse ? `  pulse={${pulse}}` : undefined,
+    bounce ? `  bounce={${bounce}}` : undefined,
+    opacity !== 1 ? `  opacity={${opacity}}` : undefined,
+    variant === 'duotone' && secondaryColor ? `  secondaryColor="${secondaryColor}"` : undefined,
+    `  className="${[`text-[${color}]`, iconClassName].filter(Boolean).join(' ').trim()}"`,
+    `  title="${name}"`,
+    `/>`
+  ].filter(Boolean);
+  return lines.join('\n');
+})()}
                   </pre>
                 </div>
               )}

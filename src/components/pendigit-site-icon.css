@@ -45,3 +45,5 @@
 .pe-icon-spinner::before { content: "\EA16"; }
 .pe-icon-star::before { content: "\EA17"; }
 .pe-icon-home::before { content: "\EA18"; }
+.pe-icon-bell::before { content: "\EA19"; }
+.pe-icon-wallet::before { content: "\EA1A"; }

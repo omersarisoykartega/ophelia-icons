@@ -31,11 +31,14 @@
     ]
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",
     "dist",
+    ".next",
     "**/*.test.*",
     "**/*.stories.*"
   ]

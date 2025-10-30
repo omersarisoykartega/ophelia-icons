@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pendigit Icons Preview</title>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./pendigit-site-icon.css" />
   <style>
     html, body {
@@ -74,103 +75,115 @@
   <div class="search-box">
     <input type="text" id="search" placeholder="Search icons..." />
   </div>
+  <div class="search-box" style="gap: 10px;">
+    <input type="text" id="className" placeholder="className (örn: hover:text-red-600 hover:scale-110)" />
+    <button id="applyClass">Apply</button>
+  </div>
   <section class="icons">
     
       <div class="icon" data-name="advert">
-        <i class="pe-icon pe-icon-advert"></i>
+        <i class="pe-icon pe-icon-advert" data-base="pe-icon pe-icon-advert"></i>
         <span>&lt;i class="pe-icon pe-icon-advert"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="eye">
-        <i class="pe-icon pe-icon-eye"></i>
+        <i class="pe-icon pe-icon-eye" data-base="pe-icon pe-icon-eye"></i>
         <span>&lt;i class="pe-icon pe-icon-eye"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="profile">
-        <i class="pe-icon pe-icon-profile"></i>
+        <i class="pe-icon pe-icon-profile" data-base="pe-icon pe-icon-profile"></i>
         <span>&lt;i class="pe-icon pe-icon-profile"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="arrow-down">
-        <i class="pe-icon pe-icon-arrow-down"></i>
+        <i class="pe-icon pe-icon-arrow-down" data-base="pe-icon pe-icon-arrow-down"></i>
         <span>&lt;i class="pe-icon pe-icon-arrow-down"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="arrow-left">
-        <i class="pe-icon pe-icon-arrow-left"></i>
+        <i class="pe-icon pe-icon-arrow-left" data-base="pe-icon pe-icon-arrow-left"></i>
         <span>&lt;i class="pe-icon pe-icon-arrow-left"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="arrow-right">
-        <i class="pe-icon pe-icon-arrow-right"></i>
+        <i class="pe-icon pe-icon-arrow-right" data-base="pe-icon pe-icon-arrow-right"></i>
         <span>&lt;i class="pe-icon pe-icon-arrow-right"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="arrow-up">
-        <i class="pe-icon pe-icon-arrow-up"></i>
+        <i class="pe-icon pe-icon-arrow-up" data-base="pe-icon pe-icon-arrow-up"></i>
         <span>&lt;i class="pe-icon pe-icon-arrow-up"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="check">
-        <i class="pe-icon pe-icon-check"></i>
+        <i class="pe-icon pe-icon-check" data-base="pe-icon pe-icon-check"></i>
         <span>&lt;i class="pe-icon pe-icon-check"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="chevron-down">
-        <i class="pe-icon pe-icon-chevron-down"></i>
+        <i class="pe-icon pe-icon-chevron-down" data-base="pe-icon pe-icon-chevron-down"></i>
         <span>&lt;i class="pe-icon pe-icon-chevron-down"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="chevron-left">
-        <i class="pe-icon pe-icon-chevron-left"></i>
+        <i class="pe-icon pe-icon-chevron-left" data-base="pe-icon pe-icon-chevron-left"></i>
         <span>&lt;i class="pe-icon pe-icon-chevron-left"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="chevron-right">
-        <i class="pe-icon pe-icon-chevron-right"></i>
+        <i class="pe-icon pe-icon-chevron-right" data-base="pe-icon pe-icon-chevron-right"></i>
         <span>&lt;i class="pe-icon pe-icon-chevron-right"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="chevron-up">
-        <i class="pe-icon pe-icon-chevron-up"></i>
+        <i class="pe-icon pe-icon-chevron-up" data-base="pe-icon pe-icon-chevron-up"></i>
         <span>&lt;i class="pe-icon pe-icon-chevron-up"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="menu">
-        <i class="pe-icon pe-icon-menu"></i>
+        <i class="pe-icon pe-icon-menu" data-base="pe-icon pe-icon-menu"></i>
         <span>&lt;i class="pe-icon pe-icon-menu"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="png">
-        <i class="pe-icon pe-icon-png"></i>
+        <i class="pe-icon pe-icon-png" data-base="pe-icon pe-icon-png"></i>
         <span>&lt;i class="pe-icon pe-icon-png"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="revenue">
-        <i class="pe-icon pe-icon-revenue"></i>
+        <i class="pe-icon pe-icon-revenue" data-base="pe-icon pe-icon-revenue"></i>
         <span>&lt;i class="pe-icon pe-icon-revenue"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="search">
-        <i class="pe-icon pe-icon-search"></i>
+        <i class="pe-icon pe-icon-search" data-base="pe-icon pe-icon-search"></i>
         <span>&lt;i class="pe-icon pe-icon-search"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="sign-up">
-        <i class="pe-icon pe-icon-sign-up"></i>
+        <i class="pe-icon pe-icon-sign-up" data-base="pe-icon pe-icon-sign-up"></i>
         <span>&lt;i class="pe-icon pe-icon-sign-up"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="x">
-        <i class="pe-icon pe-icon-x"></i>
+        <i class="pe-icon pe-icon-x" data-base="pe-icon pe-icon-x"></i>
         <span>&lt;i class="pe-icon pe-icon-x"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="combined-shape">
-        <i class="pe-icon pe-icon-combined-shape"></i>
+        <i class="pe-icon pe-icon-combined-shape" data-base="pe-icon pe-icon-combined-shape"></i>
         <span>&lt;i class="pe-icon pe-icon-combined-shape"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="flag-1">
-        <i class="pe-icon pe-icon-flag-1"></i>
+        <i class="pe-icon pe-icon-flag-1" data-base="pe-icon pe-icon-flag-1"></i>
         <span>&lt;i class="pe-icon pe-icon-flag-1"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="like">
-        <i class="pe-icon pe-icon-like"></i>
+        <i class="pe-icon pe-icon-like" data-base="pe-icon pe-icon-like"></i>
         <span>&lt;i class="pe-icon pe-icon-like"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="spinner">
-        <i class="pe-icon pe-icon-spinner"></i>
+        <i class="pe-icon pe-icon-spinner" data-base="pe-icon pe-icon-spinner"></i>
         <span>&lt;i class="pe-icon pe-icon-spinner"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="star">
-        <i class="pe-icon pe-icon-star"></i>
+        <i class="pe-icon pe-icon-star" data-base="pe-icon pe-icon-star"></i>
         <span>&lt;i class="pe-icon pe-icon-star"&gt;&lt;/i&gt;</span>
       </div>
       <div class="icon" data-name="home">
-        <i class="pe-icon pe-icon-home"></i>
+        <i class="pe-icon pe-icon-home" data-base="pe-icon pe-icon-home"></i>
         <span>&lt;i class="pe-icon pe-icon-home"&gt;&lt;/i&gt;</span>
+      </div>
+      <div class="icon" data-name="bell">
+        <i class="pe-icon pe-icon-bell" data-base="pe-icon pe-icon-bell"></i>
+        <span>&lt;i class="pe-icon pe-icon-bell"&gt;&lt;/i&gt;</span>
+      </div>
+      <div class="icon" data-name="wallet">
+        <i class="pe-icon pe-icon-wallet" data-base="pe-icon pe-icon-wallet"></i>
+        <span>&lt;i class="pe-icon pe-icon-wallet"&gt;&lt;/i&gt;</span>
       </div>
   </section>
   <script>
@@ -181,6 +194,25 @@
         $(this).toggle(name.includes(val));
       });
     });
+
+    function applyClasses() {
+      const cls = $("#className").val() || "";
+      localStorage.setItem("previewIconClass", cls);
+      $(".icon i").each(function(){
+        const base = $(this).attr("data-base") || "";
+        $(this).attr("class", (base + " " + cls).trim());
+      });
+    }
+
+    $("#applyClass").on("click", applyClasses);
+    $("#className").on("keydown", function(e){ if(e.key === "Enter"){ applyClasses(); }});
+
+    // Restore from localStorage on load
+    const saved = localStorage.getItem("previewIconClass");
+    if (saved) {
+      $("#className").val(saved);
+      applyClasses();
+    }
   </script>
 </body>
 </html>

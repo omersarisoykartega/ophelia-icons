@@ -253,7 +253,7 @@ function generateReactComponents() {
     parts.shift(); // unicode kısmını at
     const kebab = parts.join("-");
     if (!kebab) return;
-    const compName = toPascalCase(kebab);
+    const compName = toPascalCase(kebab) + "Icon";
 
     const svg = fs.readFileSync(path.join(SVG_DIR, file), "utf8");
     const vbMatch = svg.match(/viewBox="([^"]+)"/i);
@@ -273,7 +273,6 @@ import React from "react";
 export type IconSize = number | string;
 
 export type IconVariant = 'filled' | 'outlined' | 'duotone' | 'linear';
-export type IconSize = number | string;
 
 export interface IconProps extends React.SVGAttributes<SVGElement> {
   // Boyut
@@ -443,6 +442,7 @@ function generatePreviewHTML() {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pendigit Icons Preview</title>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./${FONT_NAME}.css" />
   <style>
     html, body {
@@ -512,11 +512,15 @@ function generatePreviewHTML() {
   <div class="search-box">
     <input type="text" id="search" placeholder="Search icons..." />
   </div>
+  <div class="search-box" style="gap: 10px;">
+    <input type="text" id="className" placeholder="className (örn: hover:text-red-600 hover:scale-110)" />
+    <button id="applyClass">Apply</button>
+  </div>
   <section class="icons">
     ${icons.map(
       (icon) => `
       <div class="icon" data-name="${icon}">
-        <i class="pe-icon pe-icon-${icon}"></i>
+        <i class="pe-icon pe-icon-${icon}" data-base="pe-icon pe-icon-${icon}"></i>
         <span>&lt;i class="pe-icon pe-icon-${icon}"&gt;&lt;/i&gt;</span>
       </div>`
     ).join("")}
@@ -529,6 +533,25 @@ function generatePreviewHTML() {
         $(this).toggle(name.includes(val));
       });
     });
+
+    function applyClasses() {
+      const cls = $("#className").val() || "";
+      localStorage.setItem("previewIconClass", cls);
+      $(".icon i").each(function(){
+        const base = $(this).attr("data-base") || "";
+        $(this).attr("class", (base + " " + cls).trim());
+      });
+    }
+
+    $("#applyClass").on("click", applyClasses);
+    $("#className").on("keydown", function(e){ if(e.key === "Enter"){ applyClasses(); }});
+
+    // Restore from localStorage on load
+    const saved = localStorage.getItem("previewIconClass");
+    if (saved) {
+      $("#className").val(saved);
+      applyClasses();
+    }
   </script>
 </body>
 </html>`;
